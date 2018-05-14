@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linux Reference Page</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" 
+      type="png" 
+      href="https://katiehsieh.github.io/images/musicnote.png">
+</head>
+
+<body class="background">
+  
+  <!-- top navigation bar -->
+    <div class="topnav">
+      <div class="atopnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="reference.html">Reference</a>
+        <a href="rpistatus.html">Pi's Alive</a>
+      </div>
+    </div>
+
+<div class="content">
+  <h1>Linux Reference Page</h1>
+
+  <table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  
+  <tr>
+    <td>man [command]</td>
+    <td>access built in manuals for commands and file format</td>
+    <td id="mono">man ssh-keygen</td>
+  </tr>
+  
+  <tr>
+    <td>mkdir [name]</td>
+    <td>makes [name] directory</td>
+    <td id="mono">mkdir website</td>
+  </tr>
+  
+  <tr>
+    <td>rmdir [name]</td>
+    <td>deletes [name] directory</td>
+    <td id="mono">rmdir website</td>
+  </tr>
+  
+  <tr>
+    <td>cd [directory]</td>
+    <td>goes to directory home; if directory is not specified, goes back to default home</td>
+    <td id="mono">cd scripts</td>
+  </tr>
+  
+  <tr>
+    <td>nano [file]</td>
+    <td>opens [file], creates if it doesn’t exist, and edits if it exists</td>
+    <td id="mono">nano myfirstbashscript</td>
+  </tr>
+    
+  <tr>
+    <td>cp [file] [destination]</td>
+    <td>copy [file] into [destination]</td>
+    <td id="mono">cp myfirstbashscript scripts</td>
+  <tr>
+  
+  <tr>
+    <td>mv [file] [destination]</td>
+    <td>move [file] into [destination]</td>
+    <td id="mono">mv index.html website</td>
+  <tr>
+  
+  <tr>
+    <td>rm [file]</td>
+    <td>deletes [file]</td>
+    <td id="mono">rm mysecondbashscript</td>
+  <tr>
+  
+  <tr>
+    <td>ping [ip address]</td>
+    <td>sends packets to destination ip address to check if ping is successful</td>
+    <td id="mono">ping rpi06</td>
+  <tr>
+  
+  <tr>
+    <td>reboot</td>
+    <td>shuts down and restarts Linux system</td>
+    <td id="mono">reboot</td>
+  <tr>
+  
+  <tr>
+    <td>sudo [command]</td>
+    <td>“super user do” or “switch user do” allows user with permissions to perform [command] as that user</td>
+    <td id="mono">sudo pip3 install network</td>
+  <tr>
+  
+  <tr>
+    <td>ls</td>
+    <td>lets user preview files within directory</td>
+    <td id="mono">ls</td>
+  <tr>
+    
+  <tr>
+    <td>chmod +x [filename]</td>
+    <td>add executable permission to file</td>
+    <td id="mono">chmod +x rpistats.cgi</td>
+  <tr>
+  </table>
+</div>
+
+</body>
+</html>

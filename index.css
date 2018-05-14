@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Quicksand|Roboto+Mono');
+
+body {
+  font-family: Muli;
+  margin: 0;
+  min-width: 480px;
+}
+
+h1 {
+  font-family: Quicksand;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 18;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: #336699;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+/* Style the topnav links */
+.atopnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.atopnav a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+/* indicate active page on nav */
+.active {
+    background-color: #41A2B1;
+}
+
+/* home page background */
+.background {
+    background: url("http://www.img.lirent.net/2014/10/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* home page content */
+.content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    height: 100%;
+    max-width: 1200px;
+}
+
+
+/*Table formatting*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 10px;
+}
+
+table {
+  width: 75%;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.75);
+  margin: auto;
+}
+  
+th {
+  color: white;
+  background-color: #358DAD;
+  text-align: center;
+}
+
+#mono {
+  font-family: Roboto Mono;
+}
+
+.button {
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.button a {
+    background: #41A2B1;
+    border: 1px solid #41A2B1;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background: white;
+    border: 2px solid #41A2B1;
+    color: #41A2B1;
+}
