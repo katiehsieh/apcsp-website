@@ -15,6 +15,7 @@ h1 {
 p {
   font-size: 18;
   text-align: center;
+  color: white;
 }
 
 /* Style the top navigation bar */
@@ -48,9 +49,17 @@ p {
     background-color: #41A2B1;
 }
 
+/* raspberry icon */
+.image {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    float: left;
+}
+
 /* home page background */
 .background {
-    background: url("http://www.img.lirent.net/2014/10/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png") no-repeat center center fixed;
+    background: url("http://katiehsieh.github.io/images/rpibackground.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -71,7 +80,7 @@ p {
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
 
@@ -86,6 +95,7 @@ th {
   color: white;
   background-color: #358DAD;
   text-align: center;
+  margin: auto;
 }
 
 #mono {
@@ -100,7 +110,7 @@ th {
 
 .button a {
     background: #41A2B1;
-    border: 1px solid #41A2B1;
+    border: 2px solid #41A2B1;
     border-radius: 3px;
     color: white;
     display: inline-block;
@@ -113,4 +123,14 @@ th {
     background: white;
     border: 2px solid #41A2B1;
     color: #41A2B1;
+}
+
+/* Profile Pics */
+.picture {
+  transform: rotate(90deg);
+  width: 200px;
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
