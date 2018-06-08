@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body {
+  font-family: Muli;
+  margin: 0;
+  min-width: 480px;
+  background-color: black;
+}
+
+h1 {
+  font-family: Muli;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 18;
+  text-align: center;
+  color: white;
+}
+
+table {
+  margin: auto
+}
+
+.button {
+  border: none;
+  padding: 100px;
+  display: inline-block;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #f4e436;}
+.button2 {background-color: #f44336;}
+.button3 {background-color: #008CBA;}
+.button4 {background-color: #4CAF50;}
