@@ -52,7 +52,7 @@
         // Check if we have parameter w1 passed to the script through the URL
         if (isset($_GET["w1"])) {
           $arg1 = $_GET["w1"];
-          exec("/usr/lib/cgi-bin/pi/main " . $arg1, $output, $retc);
+          exec("/usr/lib/cgi-bin/student3/main " . $arg1, $output, $retc);
 
           // check, score
 
