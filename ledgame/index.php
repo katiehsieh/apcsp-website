@@ -9,7 +9,7 @@
   <body>
     <script src="index.js"></script>
 
-    <h1>LED Game</h1>
+    <h1>LED Game!!</h1>
 
     <!-- start screen -->
     <button id="start1" class="play start" onClick="callStart()">Start</button>
@@ -46,18 +46,28 @@
 
     <?php
       // define variables and set to empty values
-      $arg1 = $output = $retc = "";
+      $arg1 = "";
+      $output = $retc = "";
 
-      function ledgame() {
+      if ($_SERVER["REQUEST_METHOD"] == "GET") {
         // Check if we have parameter w1 passed to the script through the URL
-        if (isset($_GET["w1"])) {
+
+       if (isset($_GET["w1"])) {
           $arg1 = $_GET["w1"];
+          $arg1 = strval($arg1);
+//          echo "<p>hey i clicked a button</p>"
+          echo "$arg1";
+          echo "/usr/lib/cgi-bin/student3/main " . $arg1;
+          system("/usr/lib/cgi-bin/student3/test2");
+//          system("/usr/lib/cgi-bin/student3/main 4");
           exec("/usr/lib/cgi-bin/student3/main " . $arg1, $output, $retc);
+          echo "$output";
+          echo "$retc";
 
           // check, score
 
           if ($output[0] == "start") {
-            echo "<script type='text/javascript'>window.setTimeout(game($output[1]), 1000);</script>";
+            echo "<script type='text/javascript'>game($output[1]);</script>";
           }
 
           if ($output[0] == "end") {
@@ -65,8 +75,8 @@
           }
 
          }
+      }
 
-       }
     ?>
 
   </body>
