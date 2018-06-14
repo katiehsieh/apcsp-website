@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>LED Game</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <script src="index.js"></script>
 
-    <h1>LED Game!!</h1>
+    <h1>LED Game!!!</h1>
 
     <!-- start screen -->
     <button id="start1" class="play start" onClick="callStart()">Start</button>
@@ -55,14 +55,17 @@
        if (isset($_GET["w1"])) {
           $arg1 = $_GET["w1"];
           $arg1 = strval($arg1);
-//          echo "<p>hey i clicked a button</p>"
           echo "$arg1";
           echo "/usr/lib/cgi-bin/student3/main " . $arg1;
-          system("/usr/lib/cgi-bin/student3/test2");
+//          system("/usr/lib/cgi-bin/student3/test2");
 //          system("/usr/lib/cgi-bin/student3/main 4");
           exec("/usr/lib/cgi-bin/student3/main " . $arg1, $output, $retc);
-          echo "$output";
-          echo "$retc";
+
+          foreach ($output as $line) {
+            echo $line;
+            echo "<br>";
+          }
+          echo "return code: " . $retc;
 
           // check, score
 

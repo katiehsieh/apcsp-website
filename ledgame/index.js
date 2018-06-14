@@ -1,6 +1,5 @@
 /*click color button*/
 function color(button) {
-  document.getElementById("color").innerHTML = button; /*REMOVE LATER*/
   wait();
 
   /*check*/
@@ -18,7 +17,7 @@ function wait() {
   x.style.display = "none";
 
   x = document.getElementById("quit");
-  x.style.display = "block";
+  x.style.display = "none";
 }
 
 /*click start button*/
@@ -48,7 +47,7 @@ function game(score) {
 
   display("text", score);
 
-  
+
 }
 
 /*click quit button*/
@@ -75,6 +74,11 @@ function end(score) {
 
   x = document.getElementById("quit");
   x.style.display = "none";
+
+  for(i=1; i<3; i++) {
+    x = document.getElementById("start"+i);
+    x.style.display = "none";
+  }
 
   display("end2", score);
 }
